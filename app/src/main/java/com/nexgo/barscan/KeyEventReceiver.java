@@ -15,6 +15,7 @@ public class KeyEventReceiver extends BroadcastReceiver {
     public void onReceive(Context context, Intent intent) {
         int id = intent.getIntExtra("DeviceId", 0);
         int code = intent.getIntExtra("KeyCode", 0);
-        Log.d(TAG, "DeviceID:" + id + " Code:" + code);
+        int act = intent.getIntExtra("Action", 0);
+        Log.d(TAG, "DeviceID:" + id + " Code:" + code + " Action:" + act);
     }
 }
