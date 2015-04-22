@@ -55,6 +55,7 @@ public class MainActivity extends ActionBarActivity implements InputManager.Inpu
 
     @Override
     public boolean onKeyMultiple(final int keyCode, final int repeatCount, final KeyEvent event) {
+        Log.d("onKeyMultiple", event.toString());
         return super.onKeyMultiple(keyCode, repeatCount, event);
     }
 
@@ -71,6 +72,7 @@ public class MainActivity extends ActionBarActivity implements InputManager.Inpu
 
     @Override
     public boolean onKeyDown(final int keyCode, final KeyEvent event) {
+        Log.d("onKeyDown", event.toString());
         return super.onKeyDown(keyCode, event);
     }
 
