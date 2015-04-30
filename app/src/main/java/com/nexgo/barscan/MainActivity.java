@@ -55,14 +55,12 @@ public class MainActivity extends ActionBarActivity implements InputManager.Inpu
 
     @Override
     public boolean onKeyMultiple(final int keyCode, final int repeatCount, final KeyEvent event) {
-        Log.d("onKeyMultiple", event.toString());
         return super.onKeyMultiple(keyCode, repeatCount, event);
     }
 
     @Override
     public boolean onKeyUp(final int keyCode, final KeyEvent event) {
         //Bar code scaner use OnkeyUp
-        Log.d("onKeyUp", event.toString());
         //do something when the key is came from bar scan
         if (mScandev != null && mScandev.getId() == event.getDeviceId()) {
             //TODO
@@ -72,7 +70,6 @@ public class MainActivity extends ActionBarActivity implements InputManager.Inpu
 
     @Override
     public boolean onKeyDown(final int keyCode, final KeyEvent event) {
-        Log.d("onKeyDown", event.toString());
         return super.onKeyDown(keyCode, event);
     }
 

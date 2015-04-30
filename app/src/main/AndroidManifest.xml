@@ -25,6 +25,14 @@
                 <action android:name="android.intent.action.EXTERNAL_KEYBOARD" />
             </intent-filter>
         </receiver>
+        <receiver
+            android:name=".BarCodeReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.nexgo.barscan.CODE" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
